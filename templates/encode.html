@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<!-- HEAD-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name='author' content="Stefano Caramagno">
+
+    <title>Steganography Result</title>
+
+    <!-- Collegamento al File CSS-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<!-- BODY -->
+<body>
+
+    <!-- HEADER-->
+    <header>
+        <h1>Steganography Result</h1>
+    </header>
+
+    <!-- MAIN CONTENT-->
+    <main>
+        <div id="flex-container">
+            <div class="flex-item">
+                <h2 class="titolo-item">Coded Image</h2>
+                
+                <img src="{{ url_for('static', filename='uploads/encoded_' + filename) }}" alt="Encoded Image">
+
+                <p>
+                    <a href="{{ url_for('static', filename='uploads/encoded_' + filename) }}" download>Download Encoded Image</a>
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER-->
+    <footer>
+        <p>&copy; Steganography & Steganalysis App. All rights reserved.</p>
+    </footer>
+    
+</body>
+</html>
